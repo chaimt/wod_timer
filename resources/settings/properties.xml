@@ -1,0 +1,7 @@
+<!-- User settings. Editable on the watch (Settings menu) and in the phone app. -->
+<properties>
+    <property id="prepSeconds" type="number">10</property>
+    <property id="sound" type="boolean">true</property>
+    <property id="vibrate" type="boolean">true</property>
+    <property id="recordActivity" type="boolean">true</property>
+</properties>

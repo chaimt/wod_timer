@@ -1,0 +1,6 @@
+bin/
+developer_key
+.claude
+.vscode
+.DS_Store
+__pycache__/

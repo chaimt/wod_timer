@@ -1,0 +1,37 @@
+# https://taskfile.dev
+version: "3"
+
+tasks:
+  default:
+    silent: true
+    cmds:
+      - task --list
+
+  build:
+    desc: Compile a debug .prg for the first device in manifest.xml
+    cmds:
+      - bash scripts/build.sh
+
+  test:
+    desc: Compile and run unit tests in the simulator (fr965)
+    cmds:
+      - bash scripts/test.sh
+
+  icon:
+    desc: Regenerate resources/drawables/launcher_icon.png
+    cmds:
+      - python3 tools/gen_icon.py
+
+  deploy-simulator:
+    desc: Compile, launch the Connect IQ simulator if needed, and push the app
+    interactive: true
+    cmds:
+      - bash scripts/build.sh
+      - bash scripts/run-simulator.sh
+
+  deploy-watch:
+    desc: Build and copy the app onto the connected Garmin watch over USB
+    dir: "{{.ROOT_DIR}}"
+    cmds:
+      - task: build
+      - bash scripts/deploy-watch.sh

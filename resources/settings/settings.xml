@@ -1,0 +1,14 @@
+<settings>
+    <setting propertyKey="@Properties.prepSeconds" title="@Strings.PrepSecondsTitle">
+        <settingConfig type="numeric" min="0" max="30"/>
+    </setting>
+    <setting propertyKey="@Properties.sound" title="@Strings.SoundTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+    <setting propertyKey="@Properties.vibrate" title="@Strings.VibrateTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+    <setting propertyKey="@Properties.recordActivity" title="@Strings.RecordTitle">
+        <settingConfig type="boolean"/>
+    </setting>
+</settings>

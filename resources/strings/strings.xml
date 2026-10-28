@@ -1,0 +1,9 @@
+<strings>
+    <string id="AppName">WOD Timer</string>
+
+    <!-- Settings shown in the Garmin Connect / Connect IQ phone app. -->
+    <string id="PrepSecondsTitle">Get-ready countdown (seconds)</string>
+    <string id="SoundTitle">Sounds</string>
+    <string id="VibrateTitle">Vibration</string>
+    <string id="RecordTitle">Record activity to Garmin Connect</string>
+</strings>

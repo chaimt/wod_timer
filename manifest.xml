@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+    Connect IQ application manifest for WOD Timer.
+    Declares the app id, type, supported devices, permissions and languages.
+-->
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+    <iq:application
+        entry="WodApp"
+        id="8c1dc6abd1b64ff69a988e23bc13445c"
+        launcherIcon="@Drawables.LauncherIcon"
+        minSdkVersion="4.2.1"
+        name="@Strings.AppName"
+        type="watch-app">
+
+        <!-- The user's primary device (Forerunner 965) is listed first so the
+             build tooling targets it by default. All geometry is fractional
+             of the display size, so the same layout works on the 260 px MIP
+             and 360-454 px AMOLED round families. minSdkVersion 4.2.1 covers
+             Activity.SPORT_HIIT / SUB_SPORT_AMRAP|EMOM|TABATA (4.1.6). -->
+        <iq:products>
+            <iq:product id="fr965"/>
+            <iq:product id="fr970"/>
+            <iq:product id="fr57047mm"/>
+            <iq:product id="fr265"/>
+            <iq:product id="fr265s"/>
+            <iq:product id="fr255"/>
+            <iq:product id="fr955"/>
+            <iq:product id="epix2pro47mm"/>
+            <iq:product id="epix2pro51mm"/>
+            <iq:product id="fenix7"/>
+            <iq:product id="fenix7pro"/>
+            <iq:product id="fenix843mm"/>
+            <iq:product id="fenix847mm"/>
+            <iq:product id="venu3"/>
+            <iq:product id="vivoactive5"/>
+        </iq:products>
+
+        <!-- Fit: record each WOD as a HIIT activity (heart rate, calories,
+             one lap per round) that syncs to Garmin Connect. -->
+        <iq:permissions>
+            <iq:uses-permission id="Fit"/>
+        </iq:permissions>
+
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+    </iq:application>
+</iq:manifest>
