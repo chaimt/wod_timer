@@ -85,3 +85,51 @@ task icon               # regenerate the launcher icon
 ```
 
 Store package: `monkeyc -e -r -f monkey.jungle -o bin/wodtimer.iq -y developer_key`.
+
+## Connect IQ Store description
+
+Paste into the store listing (2440 of 4000 characters):
+
+```text
+WOD Timer is a simple, no-nonsense workout timer for cross-training, functional fitness, HIIT and circuits. Choose the WOD type, set the time and press START.
+
+TIMERS
+• AMRAP – As Many Rounds As Possible. Set a time (default 20:00) and the clock counts down. Tap the screen or press LAP to count each round.
+• FOR TIME – Do the work as fast as possible while the clock counts up. Add an optional time cap, or leave it open and stop the clock when you finish. Tap or press LAP to count rounds.
+• EMOM – Every Minute On the Minute. Set the total time and the interval length (for example 10 x 1:00, or every 1:30). A new interval starts with a beep and vibration, and the screen shows the current round and the total time left.
+• TABATA / HIIT – Set work time, rest time and rounds (default 20 s work / 10 s rest x 8). WORK shows in green, REST in red, and there is no wasted rest after the last round.
+
+BIG, CLEAR DISPLAY
+• Huge clock you can read mid-burpee
+• Phase shown in color: GET READY, WORK, REST, DONE
+• Progress ring around the bezel for the current interval
+• Round counter (ROUND 3/8 or ROUNDS 5)
+• Total time left or elapsed, plus live heart rate
+
+SOUNDS AND VIBRATION
+• Get-ready countdown before the workout starts (0–30 s, default 10 s)
+• 3-2-1 beeps before every phase change
+• Distinct tones for work, rest and the finish
+• The screen wakes up at every phase change
+• Sounds and vibration can each be turned on or off
+
+WORKOUT LOG
+• Every saved WOD is logged on the watch: type, result (time or rounds), plan and date
+• Keeps your last 50 workouts
+• Each timer remembers the settings you used last
+
+GARMIN CONNECT
+Optionally record each workout as a Garmin HIIT activity (AMRAP, EMOM or Tabata sub-sport) with heart rate and calories. Each round is saved as a lap, so you get a per-round split table in Garmin Connect. Recording can be turned off in Settings.
+
+CONTROLS
+• START – start, pause and resume
+• BACK / LAP – count a round (AMRAP and For Time); in other modes it pauses and opens the menu
+• Tap the screen – count a round
+• Pause, then choose Resume, Save or Discard
+Workouts in progress are saved if the app is closed, so you never lose a WOD.
+
+SETTINGS
+Change the get-ready countdown, sounds, vibration and activity recording on the watch or in the Connect IQ app on your phone.
+
+Built for functional fitness, cross-training WODs, metcons, HIIT, interval training, weightlifting, circuits and running intervals.
+```
