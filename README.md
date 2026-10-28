@@ -78,10 +78,11 @@ You need the Connect IQ SDK and a `developer_key` in the project root
 
 ```bash
 task build              # debug .prg for the first manifest device (fr965)
+task package            # store .iq for every manifest device -> bin/wodtimer.iq
 task test               # unit tests in the simulator (start it first)
 task deploy-simulator   # build + launch simulator + run
 task deploy-watch       # copy to a USB-connected watch (needs libmtp)
 task icon               # regenerate the launcher icon
 ```
 
-Store package: `monkeyc -e -r -f monkey.jungle -o bin/wodtimer.iq -y developer_key`.
+Upload `bin/wodtimer.iq` at https://apps.garmin.com/en-US/developer/upload.

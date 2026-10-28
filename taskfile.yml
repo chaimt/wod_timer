@@ -12,6 +12,11 @@ tasks:
     cmds:
       - bash scripts/build.sh
 
+  package:
+    desc: Build the store-ready .iq (release) for every device in manifest.xml
+    cmds:
+      - bash scripts/package.sh
+
   test:
     desc: Compile and run unit tests in the simulator (fr965)
     cmds:
