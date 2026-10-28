@@ -33,9 +33,25 @@ class WodApp extends Application.AppBase {
     }
 
     function getInitialView() as [WatchUi.Views] or [WatchUi.Views, WatchUi.InputDelegates] {
+        _enableTouch();
         var menu = new MainMenu();
         _mainMenu = menu;
         return [menu, new MainMenuDelegate(menu)];
+    }
+
+    //! On button + touch watches (Forerunner 965/265, fenix 7/8, ...) the
+    //! firmware may withhold touch events from a watch app, following the
+    //! watch's Touch settings, so taps (+1 round, picker steps) never arrive.
+    //! Ask for them explicitly; API 5.2.0+, older firmware simply skips it.
+    private function _enableTouch() as Void {
+        if (!(WatchUi has :configureTouchEvents)) {
+            return;
+        }
+        try {
+            WatchUi.configureTouchEvents({:enabled => true});
+        } catch (e) {
+            // Buttons still drive every action; touch is a convenience.
+        }
     }
 
     //! A workout was saved: refresh the log count on the home screen.
